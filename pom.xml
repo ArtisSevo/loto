@@ -12,7 +12,7 @@
 	<artifactId>switter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>switter</name>
-	<description>twitter copy</description>
+	<description>loto</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -64,10 +64,6 @@
 			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.security</groupId>
@@ -103,12 +99,12 @@
 			<version>2.7.0</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-			<version>1.4.199</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.h2database</groupId>-->
+<!--			<artifactId>h2</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--			<version>1.4.198</version>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
