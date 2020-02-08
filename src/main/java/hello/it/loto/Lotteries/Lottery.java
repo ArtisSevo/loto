@@ -6,10 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
-
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Data
 @Entity
@@ -17,13 +15,13 @@ import javax.persistence.*;
 public class Lottery {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private String id;
+    private Long id;
 
     @Column
-    private Integer limit;
+    private Integer maxLimit;
 
-    @Column
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private LotteryStatus status;
 
     @Column
     private String title;
@@ -58,27 +56,27 @@ public class Lottery {
         this.endDate = endDate;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Integer limit() {
-        return limit;
+    public Integer getMaxLimit() {
+        return maxLimit;
     }
 
-    public void setParticipantLimit(Integer limit) {
-        this.limit = limit;
+    public void setMaxLimit(Integer maxLimit) {
+        this.maxLimit = maxLimit;
     }
 
-    public String getStatus() {
+    public LotteryStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(LotteryStatus status) {
         this.status = status;
     }
 }

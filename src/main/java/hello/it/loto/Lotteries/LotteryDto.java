@@ -5,11 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class LotteryDto {
+    private Long id;
     private String title;
-    private Integer limit;
+    private int limit;
+    private LotteryStatus status;
+    private String startDate;
+    private String endDate;
 }
