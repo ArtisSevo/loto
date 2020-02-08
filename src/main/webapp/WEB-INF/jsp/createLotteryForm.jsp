@@ -15,7 +15,7 @@
                 <label for="limit">Max participiants</label>
                 <input name="limit" class="form-control" placeholder="Enter max participiants">
             </div>
-            <button type="submit" class="btn btn-success" onclick="createLottery()">Create</button>
+            <button type="submit" class="btn btn-success">Create</button>
             <button type="button" class="btn btn-secondary" onclick="window.location.href = '/lotteries'">Cancel</button>
         </div>
     </div>

@@ -5,6 +5,7 @@
     <title>This is title</title></header>
 <body>
 <button onclick="window.location.href='/start-registration'" type="button" class="btn btn-primary">Create Lottery</button>
+<button onclick="window.location.href='/register'" type="button" class="btn btn-primary">Register</button>
 <table class="table table-hover">
     <thead>
     <tr>
